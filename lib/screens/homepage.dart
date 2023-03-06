@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo/screens/task.dart';
 import 'package:todo/widgets/custom_widgets.dart';
 
 class Homepage extends StatefulWidget {
@@ -13,7 +14,14 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        onPressed: (() {}),
+        onPressed: (() {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: ((context) => const TaskPage()),
+            ),
+          );
+        }),
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.all(
             Radius.circular(15.0),

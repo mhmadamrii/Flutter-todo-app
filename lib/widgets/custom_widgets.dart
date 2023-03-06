@@ -42,3 +42,19 @@ class TaskCardWidget extends StatelessWidget {
     );
   }
 }
+
+class TodoWidget extends StatelessWidget {
+  const TodoWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    // ignore: avoid_unnecessary_containers
+    return Container(
+      child: Row(
+        children: [
+          Container(),
+        ],
+      ),
+    );
+  }
+}
